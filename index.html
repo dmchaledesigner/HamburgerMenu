@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>Full-height Off Screen Menu</title>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/modernizr.js"></script>
+  <!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+	<header class="cf">
+			<h1>Full Height Off Screen Menu</h1>
+			<a href="#" id="navicon" class="closed">&#9776;</a>
+			<ul id="fallback-nav">
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+	</header>
+	
+	<nav id="main-nav">
+			<a href="#" class="current"><div>Home</div></a>
+			<a href="#"><div>About</div></a>
+			<a href="#"><div>Work</div></a>
+			<a href="#"><div>Blog</div></a>
+			<a href="#"><div>Contact</div></a>
+	</nav>
+	
+	<div id="main-content">
+	
+	  <article>
+      	<h2><a href="#">Article Title</a></h2>
+      	<span class="date">Published 25th February 2014</span>
+	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
+
+Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
+
+Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. <a href="#">Read more &rarr;</a></p>
+	  </article>
+	  
+	  <article>
+      	<h2><a href="#">Article Title</a></h2>
+       	<span class="date">Published 25th February 2014</span>
+	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
+
+Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
+
+Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. <a href="#">Read more &rarr;</a></p>
+	  </article>
+	  
+	  <article>
+      	<h2><a href="#">Article Title</a></h2>
+      	<span class="date">Published 25th February 2014</span>
+	  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
+
+Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. 
+
+Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. <a href="#">Read more &rarr;</a></p>
+	  </article>
+	  
+	  <p><a href="#" class="older">&lt; Older Posts</a></p>
+	  
+	</div>
+	
+	<div class="fade"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.fade').hide();
+	  $('#navicon').click(function() {
+	  
+	  if($('#navicon').hasClass('closed')) {
+	  	  //$('body').animate({left: "-250px"}, 400).css({"overflow":"hidden"});
+		  $('#main-nav').animate({right: "0"}, 400);
+		  $(this).removeClass('closed').addClass('open').html('x');
+		  $('.fade').fadeIn();
+	  }
+	  else if($('#navicon').hasClass('open')) {
+		   $('body').animate({left: "0"}, 400).css({"overflow":"scroll"});
+		  $('#main-nav').animate({right: "-250px"}, 400);
+		  $(this).removeClass('open').addClass('closed').html('&#9776;');
+		  $('.fade').fadeOut();
+	  }
+	  });
+  });
+</script>
+</body>
+</html>
