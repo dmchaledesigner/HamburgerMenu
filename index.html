@@ -5,8 +5,11 @@
 	<meta charset="utf-8">
 	<title>Full-height Off Screen Menu</title>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+  <link type = "text/css" rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   <script src="js/modernizr.js"></script>
   <!--[if lt IE 9]>
   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,25 +77,8 @@ Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torqu
 	<div class="fade"></div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-  $(document).ready(function() {
-      $('.fade').hide();
-	  $('#navicon').click(function() {
-	  
-	  if($('#navicon').hasClass('closed')) {
-	  	  //$('body').animate({left: "-250px"}, 400).css({"overflow":"hidden"});
-		  $('#main-nav').animate({right: "0"}, 400);
-		  $(this).removeClass('closed').addClass('open').html('x');
-		  $('.fade').fadeIn();
-	  }
-	  else if($('#navicon').hasClass('open')) {
-		   $('body').animate({left: "0"}, 400).css({"overflow":"scroll"});
-		  $('#main-nav').animate({right: "-250px"}, 400);
-		  $(this).removeClass('open').addClass('closed').html('&#9776;');
-		  $('.fade').fadeOut();
-	  }
-	  });
-  });
+<script src="js/myscripts.js"></script>
+  
 </script>
 </body>
 </html>
